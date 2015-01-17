@@ -1,0 +1,28 @@
+<div class="sidebar">
+  {% if COVER_IMG_URL %}
+  <div class="cover-img" style="background-image: url('{{ COVER_IMG_URL }}')">
+  {% elif BACKGROUND_COLOR %}
+    <div class="cover-img" style="background-color:{{ BACKGROUND_COLOR }}">
+  {% else %}
+      <div class="cover-img" style="background-color:black">
+  {% endif %}
+        <div class="cover-body">
+          <header class="header">
+            <hgroup>
+              <h1 class="brand-main"><a href="/">{{ SITENAME }}</a></h1>
+              <p class="tagline">{{ TAGLINE }}</p>
+          {% for title, link in MENUITEMS %}
+              <p class="links"><a href="{{ SITEURL }}/{{ link }}">{{ title }}</a></p>
+          {% endfor %}
+              <p class="social">
+          {% for title, link in SOCIAL %}
+                <a href="{{ link }}">
+                  <i class="fa fa-{{ title }} fa-3x"></i>
+                </a>
+            {% endfor %}
+              <p>
+            </hgroup>
+          </header>
+        </div>
+      </div>
+    </div>
