@@ -47,7 +47,7 @@ GOOGLE_FONTS = [
 ]
 
 # THEME
-THEME = 'theme/lanox/'
+THEME = 'theme/pelican-alchemy/'
 
 #Set IIMAGE on side bar or set COLOR
 #COVER_IMG_URL = 'http://i.imgur.com/rdpkAUi.jpg'
