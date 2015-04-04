@@ -139,21 +139,21 @@ header .logo:hover {
     padding: 10px 15px;
     color: #1a898a;
     font-size: .75rem;
-    font-family: "AvenirNextLTW01-Italic",  "Avenir Next",  sans-serif;
+    font-family: sans-serif;
     font-style: normal;
 }
 .hero {
-    height: 250px;
-    background-color: #DEDEDE;
+    height: 200px;
+    background-color: #fff;
     background-position: center center;
     background-size: cover;
     text-align: center;
 }
 .hero h1 {
-    background-color: #DEDEDE;
+    background-color: #fff;
     display: inline-block;
     padding: 0px 20px;
-    line-height: 60px;
+    line-height: 40px;
     margin-top: 90px;
 }
 .recent-posts {
@@ -173,9 +173,9 @@ header .logo:hover {
 }
 .recent-posts li .date {
     float: right;
-    font-size: 12px;
+    font-size: 15px;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.55);
     line-height: 24px;
 }
 @media (max-width: 57em) {
@@ -230,35 +230,35 @@ footer .bio {
 }
 }html {
     font-size: 16px;
-    font-family: "AvenirNextLTW01-Regular",  "Avenir Next",  sans-serif;
+    font-family: sans-serif;
     line-height: 1.6;
 }
 h1, h2, h3, h4, h5, h6, b, strong {
     color: #fd7f05;
     font-weight: normal;
-    font-family: "Avenir Next LT W01 Bold",  "Avenir Next",  sans-serif;
+    font-family: sans-serif;
 }
 b, strong {
     color: #1a898a;
 }
 strong em {
-    font-family: "Avenir Next LT W01 Bold",  "Avenir Next",  sans-serif;
+    font-family: sans-serif;
     font-style: italic;
 }
 em, i {
-    font-family: "AvenirNextLTW01-Italic",  "Avenir Next",  sans-serif;
+    font-family: sans-serif;
     font-style: normal;
 }
 a {
     color: #000;
 }
 header li {
-    font-family: "Avenir Next LT W01 Bold",  "Avenir Next",  sans-serif;
+    font-family: sans-serif;
     font-weight: normal;
     font-size: 15px;
 }
 header h1 {
-    color: #fff;
+    color: #000;
     font-size: 46px;
 }
 header h1.compressed {
@@ -273,7 +273,7 @@ header h1.compressed {
     line-height: 7vw !important;
 }
 }.content .date {
-    font-family: "Avenir Next LT W01 Bold",  "Avenir Next",  sans-serif;
+    font-family: sans-serif;
     font-weight: normal;
     font-size: 13px;
 }
@@ -296,7 +296,7 @@ header h1.compressed {
     border-color: #fd7f05;
 }
 footer {
-    font-family: "Avenir Next LT W01 Bold",  "Avenir Next",  sans-serif;
+    font-family: sans-serif;
     font-weight: normal;
 }
 @media (min-width: 38em) {
@@ -310,13 +310,16 @@ footer {
     border-radius: 5px;
     background-color: #fbfbfb;
     font-size: 16px;
-    overflow: auto;
+    overflow: scroll;
     text-shadow: none;
     color: #111;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+
 }
 .highlight pre {
-    padding: 15px 5%}
+    padding: 0px 5%;
+
+}
 @media (max-width: 38em) {
     .highlight {
     max-width: 110vw;

@@ -42,7 +42,9 @@ Edit following config file and make changes to database,username,password you cr
 
 ```bash
 vi /usr/share/puppet-dashboard/config/database.yml
+
 ```
+
 ```yaml
 production:
 database: dashboard
@@ -63,7 +65,7 @@ Populate the database
 ```bash
 cd /usr/share/puppet-dashboard
 ```
-
+<br>
 ```ruby
 rake db:migrate
 ```
