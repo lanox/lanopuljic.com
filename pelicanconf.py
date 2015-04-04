@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Lano'
-SITENAME = 'Shit Lano Says'
+SITENAME = '#! Shit Lano Says'
 SITEURL = ''
 
 PATH = 'content'
@@ -47,14 +47,11 @@ GOOGLE_FONTS = [
 ]
 
 # THEME
-THEME = 'theme/pelican-alchemy/'
+THEME = 'theme/lanox/'
 
-#Set IIMAGE on side bar or set COLOR
-#COVER_IMG_URL = 'http://i.imgur.com/rdpkAUi.jpg'
-BACKGROUND_COLOR = 'black'
 
 # Set menu buttons on side bar
-MENUITEMS = [('Archive', 'archives.html'), ('About', 'pages/about.html'), ('Work', 'pages/work.html'),]
+MENUITEMS = [('Archive', 'archives.html'), ('About', '/pages/about.html'), ('Work', '/pages/work.html'),]
 
 #Activate Comments from DISQUS
 DISQUS_SITENAME = 'lanopuljic'
@@ -72,3 +69,6 @@ ARTICLE_URL = '{date:%Y}/{date:%B}/{slug}/'
 ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = PAGE_URL + 'index.html'
+
+# Displays page number on main page.
+DEFAULT_PAGINATION = False

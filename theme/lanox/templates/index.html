@@ -1,29 +1,22 @@
-{% extends 'base.html' %}
-
+{% extends "base.html" %}
 {% block content %}
-<div id="layout">
-    {% include 'sidebar.html' %}
-        <div class="content">
-            <!-- A wrapper for all the blog posts -->
-            <div class="post">
-                <h1 class="content-subhead">
-                    {% block pagetitle %}
-                        {% if not articles_page.has_previous() %}
-                            Latest posts
-                        {% else %}
-                            Posts
-                        {% endif %}
-                    {% endblock pagetitle %}
-                    {% if articles_page.has_previous() %}
-                        &ndash; Page&nbsp;{{ articles_page.number }}
-                    {% endif %}
-                </h1>
-                {% for article in articles_page.object_list %}
-                    {% include 'post.html' %}
-                {% endfor %}
-                {% include 'pagination.html' %}
-                {% include 'footer.html' %}
-            </div>
+
+
+
+<div class="container content">
+    <ul class="recent-posts">
+      <li>
+          {% for article in articles_page.object_list %}
+          <a href="{{ SITEURL }}/{{ article.url }}">
+        <div>
+          <span class="title" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</span>
+          <span class="date" "{{ article.date.isoformat() }}"> {{ article.locale_date }}</span>
         </div>
+        </a>  
+         {% endfor %}        
+      </li>
+    </ul>
 </div>
+
+{% include 'pagination.html' %}
 {% endblock content %}
