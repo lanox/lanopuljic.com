@@ -175,7 +175,7 @@ header .logo:hover {
 }
 .recent-posts li .date {
     float: right;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.55);
     line-height: 24px;
