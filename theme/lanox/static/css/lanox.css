@@ -14,7 +14,7 @@ header .logo {
     opacity: .75;
     position: fixed;
     left: 10px;
-    top: 10px;
+    top: -30px;
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;
     -ms-transition: opacity 0.3s ease;
@@ -27,6 +27,8 @@ header .logo:hover {
 @media (max-width: 48em) {
     header .logo {
     position: absolute;
+    left: 10px;
+    top: 0px;
 }
 }.container {
     margin: 0 auto;
