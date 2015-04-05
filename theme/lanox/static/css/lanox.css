@@ -81,6 +81,15 @@ header .logo:hover {
     margin-left: 0;
     text-align: left;
 }
+@media (max-width: 67rem) {
+    .content .date {
+    margin-top: 7px;
+    margin-bottom: 25px;
+    width: 150px;
+    text-transform: uppercase;
+    color: #fd7f05;
+}
+
 }.content p code {
     background-color: rgba(253, 127, 5, 0.15);
     padding: 2px 4px;
