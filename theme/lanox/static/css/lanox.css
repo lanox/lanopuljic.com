@@ -24,9 +24,11 @@ header .logo {
 header .logo:hover {
     opacity: 1;
 }
-@media (max-width: 100em) {
+@media (max-width: 75em) {
     header .logo {
     position: absolute;
+    left: 10px;
+    top:  0px;
     }
 }
 
@@ -199,12 +201,15 @@ header .logo:hover {
 @media (max-width: 67em) {
     .recent-posts li .date {
     display: none;
+    }
 }
-}.closing {
+
+.closing {
     margin: 4rem 0;
     font-size: 14px;
     color: #999;
 }
+
 .closing a {
     border-bottom: 0 !important;
 }
