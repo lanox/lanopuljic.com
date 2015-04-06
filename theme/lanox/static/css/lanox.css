@@ -78,7 +78,7 @@ header .logo:hover {
     text-transform: uppercase;
     color: #fd7f05;
 }
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
     .content .date {
         float: none;
         margin-left: 0;
