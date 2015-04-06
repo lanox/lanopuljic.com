@@ -75,21 +75,12 @@ header .logo:hover {
     text-transform: uppercase;
     color: #fd7f05;
 }
-@media (max-width: 900px) {
+@media (max-width: 500px) {
     .content .date {
     float: none;
     margin-left: 0;
     text-align: left;
-}
-@media (max-width: 67rem) {
-    .content .date {
-    margin-top: 7px;
-    margin-bottom: 25px;
-    width: 150px;
-    text-transform: uppercase;
-    color: #fd7f05;
-}
-
+    }
 }.content p code {
     background-color: rgba(253, 127, 5, 0.15);
     padding: 2px 4px;
@@ -116,7 +107,8 @@ header .logo:hover {
 }
 .content blockquote p {
     margin: 0;
-    padding: 15px 5%}
+    padding: 15px 5%
+}
 @media (max-width: 38em) {
     .content blockquote {
     max-width: 110vw;
