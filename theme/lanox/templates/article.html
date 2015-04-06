@@ -23,7 +23,11 @@
 
  <div class="date">
   {{ article.locale_date }}<br>
-  LANO Puljic
+  {% if article.authors %}
+      {% for author in article.authors %}
+          <span class="author" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a></span>
+        {% endfor %}
+      {% endif %}
 </div>
     {{ article.content }}
   </div>
