@@ -322,8 +322,10 @@ footer {
 @media (min-width: 38em) {
     html {
     font-size: 20px;
+    }
 }
-}.highlight {
+
+.highlight {
     min-width: 110%;
     max-width: 110%;
     margin-left: -5%;
@@ -336,11 +338,13 @@ footer {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
 
 }
+
 .highlight pre {
     padding: 0px 5%;
 
 }
-@media (max-width: 38em) {
+
+@media (max-width: 68em) {
     .highlight {
     max-width: 110vw;
     margin-left: -2rem;
