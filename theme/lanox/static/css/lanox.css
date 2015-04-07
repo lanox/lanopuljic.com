@@ -251,11 +251,14 @@ footer .bio a {
 footer .bio {
     display: none;
 }
-}html {
-    font-size: 16px;
+}
+
+html {
+    font-size: 20px;
     font-family: sans-serif;
     line-height: 1.6;
 }
+
 h1, h2, h3, h4, h5, h6, b, strong {
     color: #fd7f05;
     font-weight: normal;
