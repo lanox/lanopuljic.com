@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 <head>
-        {% block head %}
-<head>
+{% block head %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% block meta_description %}{{ SITENAME }}, {{ TAGLINE }}{% endblock meta_description %}">
-
-    {% if FEED_ALL_ATOM %}
-        <link rel="alternate"  href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" title="{{ SITENAME }} Full Atom Feed"/>
-    {% endif %}
-    {% if FEED_ALL_RSS %}
-        <link rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" title="{{ SITENAME }} Full RSS Feed"/>
-    {% endif %}
-    {% if FEED_ATOM %}
-        <link rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" title="{{ SITENAME }} Atom Feed"/>
-    {% endif %}
-    {% if FEED_RSS %}
-        <link rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" title="{{ SITENAME }} RSS Feed"/>
-    {% endif %}
-        {% endblock head %}
-        <link href="{{ SITEURL }}/theme/css/lanox.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css">
-
-    {% if GOOGLE_FONTS %}
-        <link href="//fonts.googleapis.com/css?family={{ GOOGLE_FONTS | join('|') | replace(' ', '+') }}" rel="stylesheet" type="text/css">
-    {% endif %}
+{% if FEED_ALL_ATOM %}
+    <link rel="alternate"  href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" title="{{ SITENAME }} Full Atom Feed"/>
+{% endif %}
+{% if FEED_ALL_RSS %}
+    <link rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" title="{{ SITENAME }} Full RSS Feed"/>
+{% endif %}
+{% if FEED_ATOM %}
+    <link rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" title="{{ SITENAME }} Atom Feed"/>
+{% endif %}
+{% if FEED_RSS %}
+    <link rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" title="{{ SITENAME }} RSS Feed"/>
+{% endif %}
+{% if GOOGLE_FONTS %}
+    <link href="//fonts.googleapis.com/css?family={{ GOOGLE_FONTS | join('|') | replace(' ', '+') }}" rel="stylesheet" type="text/css">
+{% endif %}
+    <link href="{{ SITEURL }}/theme/css/lanox.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css">
+{% endblock head %}
 
 </head>
 
 <body>
-<body>
   <header>
     <div class="logo">
-      <h1>LPP</h1>
+      <h1>LP</h1>
     </div>
 
-    <div class="hero">    
-      <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
-    </div>
+    {% if COVER_IMG_URL %}
+    <div class="hero" style="background-image: url('{{ COVER_IMG_URL }}')">
+    <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+    {% endif %}
+      </div>
+
   </header>
 
 <!-- Menu Starts From Here -->
@@ -54,5 +53,5 @@
     {% block content %}
     {% endblock %}
  {% include "footer.html" %}
-</body>
+
 </html>

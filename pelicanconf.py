@@ -46,15 +46,14 @@ GOOGLE_FONTS = [
 "Source Code Pro",
 ]
 
+COVER_IMG_URL = 'theme/images/logo1.jpg'
+
 # THEME
 THEME = 'theme/lanox/'
 
 
 # Set menu buttons on side bar
 MENUITEMS = [('Archive', 'archives.html'), ('About', '/pages/about.html'), ('Work', '/pages/work.html'),]
-
-#Activate Comments from DISQUS
-DISQUS_SITENAME = 'lanopuljic'
 
 # Custome FOOTER Text
 #FOOTER_TEXT = ''
