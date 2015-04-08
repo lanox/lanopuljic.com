@@ -202,9 +202,6 @@ header .logo:hover {
     .recent-posts li .date {
     display: none;
     }
-    .recent-posts li .title {
-        font-size: 2rem;
-    }
 }
 
 .closing {
@@ -257,7 +254,7 @@ footer .bio {
 }
 
 html {
-    font-size: 20px;
+    font-size: 16px;
     font-family: "lato", "sans-serif";
     line-height: 1.6;
 }
