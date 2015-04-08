@@ -1,4 +1,4 @@
-Title: Install Puppet Server on CentOS 6.5 this is some testa
+Title: Install Puppet Server on CentOS 6.5
 Date: 2014-05-19 09:36:56 +1000
 Category: Puppet
 Tags: puppet,centOS 6.5
