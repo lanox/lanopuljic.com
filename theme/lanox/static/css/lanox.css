@@ -157,7 +157,7 @@ header .logo:hover {
     padding: 10px 15px;
     color: #1a898a;
     font-size: .75rem;
-    font-family: sans-serif;
+    font-family: "lato", "sans-serif";
     font-style: normal;
 }
 
@@ -258,7 +258,7 @@ footer .bio {
 
 html {
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "lato", "sans-serif";
     line-height: 1.6;
 }
 
