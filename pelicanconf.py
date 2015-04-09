@@ -46,6 +46,7 @@ GOOGLE_FONTS = [
 "Source Code Pro",
 ]
 
+# DISPLAY COVER IMAGE 
 COVER_IMG_URL = 'theme/images/logo1.jpg'
 
 # THEME
@@ -56,7 +57,7 @@ THEME = 'theme/lanox/'
 MENUITEMS = [('Archive', 'archives.html'), ('About', '/pages/about.html'), ('Work', '/pages/work.html'),]
 
 # Custome FOOTER Text
-#FOOTER_TEXT = ''
+FOOTER_TEXT = 'I build things by banging on a keyboard.'
 
 #TAGLINE - Used for the page titles and some meta tags.
 TAGLINE = 'dd if=/dev/brain of=/dev/blog'

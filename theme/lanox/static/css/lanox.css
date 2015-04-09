@@ -174,8 +174,9 @@ header .logo:hover {
     display: inline-block;
     padding: 0px 20px;
     line-height: 60px;
-    margin-top: 90px;
+    margin-top: 63px;
 }
+
 .recent-posts {
     margin-bottom: 5rem;
     padding-left: 0;
@@ -235,7 +236,7 @@ footer {
     margin-bottom: 2rem;
 }
 footer .bio {
-    color: rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.61);
     text-align: center;
     font-size: 14px;
     line-height: 40px;
