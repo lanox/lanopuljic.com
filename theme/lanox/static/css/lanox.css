@@ -172,18 +172,18 @@ header .logo:hover {
 .hero h1 {
     background-color: #fff;
     display: inline-block;
-    padding: 0px 20px;
-    line-height: 60px;
-    margin-top: 40px;
+    padding: 10px 20px;
+    line-height: normal;
+    margin-top: 60px;
 }
 
 .hero .tagline {
     background-color: #FFF;
     display: block;
     padding: 0px 20px;
-    line-height: 60px;
+    line-height: normal;
     margin: 0 auto 0 auto;
-    font-size: 0.3em;
+    font-size: 0.5em;
     color: #000;
 }
 
