@@ -65,7 +65,7 @@ Populate the database
 ```bash
 cd /usr/share/puppet-dashboard
 ```
-<br>
+
 ```ruby
 rake db:migrate
 ```

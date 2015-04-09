@@ -7,6 +7,7 @@ about_author: System Engineer, Puppeteer you name it.
 email: lano.puljic@gmail.com
 Summary: Instructions on how to setup Puppet on CentOS 6.5 with ease
 
+
 #### Download puppet-server from Puppet Labs
 ```bash
 yum install -y puppet-server

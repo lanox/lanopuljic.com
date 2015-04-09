@@ -1,34 +1,32 @@
 {% extends "base.html" %}
-
 {% block head %}
   {{ super() }}
   {% for keyword in article.keywords %}
     <meta name="keywords" contents="{{keyword}}" />
   {% endfor %}
-
   {% for description in article.description %}
     <meta name="description" contents="{{description}}" />
   {% endfor %}
-
   {% for tag in article.tags %}
     <meta name="tags" contents="{{tag}}" />
   {% endfor %}
-
 {% endblock %}
-
 {% block content %}
 
   <div class="container content">
       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
 
  <div class="date">
-  {{ article.locale_date }}<br>
+ <i class="fa fa-calendar"></i> {{ article.locale_date }}
   {% if article.authors %}
       {% for author in article.authors %}
-          <span class="author" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a></span>
+          <span class="author" href="{{ SITEURL }}/{{ author.url }}">&nbsp; <i class="fa fa-user"></i> {{ author }}</a></span>
         {% endfor %}
       {% endif %}
 </div>
     {{ article.content }}
   </div>
+              {% if DISQUS_SITENAME %}
+                {% include 'disqus.html' %}
+            {% endif %}
 {% endblock %}

@@ -22,8 +22,8 @@
 {% endif %}
     <link href="{{ SITEURL }}/theme/css/lanox.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css">
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
 {% endblock head %}
-
 </head>
 
 <body>
@@ -49,7 +49,7 @@
             <li><a href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
       </ul>
-    <hr>
+    <!--<hr> This prints orange line under the menu -->
  </div>
 <!-- Menu ends above this comment -->
     {% block content %}

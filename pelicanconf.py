@@ -52,6 +52,7 @@ COVER_IMG_URL = 'theme/images/logo1.jpg'
 # THEME
 THEME = 'theme/lanox/'
 
+DISQUS_SITENAME = "lanopuljic"
 
 # Set menu buttons on side bar
 MENUITEMS = [('Archive', 'archives.html'), ('About', '/pages/about.html'), ('Work', '/pages/work.html'),]
