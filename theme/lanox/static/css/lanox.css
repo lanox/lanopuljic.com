@@ -174,7 +174,17 @@ header .logo:hover {
     display: inline-block;
     padding: 0px 20px;
     line-height: 60px;
-    margin-top: 63px;
+    margin-top: 40px;
+}
+
+.hero .tagline {
+    background-color: #FFF;
+    display: block;
+    padding: 0px 20px;
+    line-height: 60px;
+    margin: 0 auto 0 auto;
+    font-size: 0.3em;
+    color: #000;
 }
 
 .recent-posts {
@@ -285,7 +295,7 @@ header li {
     font-size: 15px;
 }
 header h1 {
-    color: #000;
+    color: #06F8B3;
     font-size: 46px;
 }
 header h1.compressed {

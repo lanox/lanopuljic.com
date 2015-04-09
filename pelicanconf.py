@@ -57,10 +57,10 @@ THEME = 'theme/lanox/'
 MENUITEMS = [('Archive', 'archives.html'), ('About', '/pages/about.html'), ('Work', '/pages/work.html'),]
 
 # Custome FOOTER Text
-FOOTER_TEXT = 'I build things by banging on a keyboard.'
+FOOTER_TEXT = ' builds things by banging on a keyboard.'
 
 #TAGLINE - Used for the page titles and some meta tags.
-TAGLINE = 'dd if=/dev/brain of=/dev/blog'
+TAGLINE = 'Life is binary, zeros and ones.'
 
 #GOOGLE_ANALYTICS - Set the Google Analytics code (eg. "UA-000000-00")
 
