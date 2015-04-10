@@ -34,7 +34,7 @@ header .logo:hover {
 
 .container {
     margin: 0 auto;
-    max-width: 40rem;
+    max-width: 35rem;
 }
 
 .container hr {
@@ -260,6 +260,7 @@ footer .bio {
 }
 footer .bio a {
     text-decoration: none;
+    border-bottom: none;
 }
 @media (max-width: 43em) {
     footer {
@@ -267,7 +268,7 @@ footer .bio a {
 }
 footer .bio {
     display: none;
-}
+    }
 }
 
 html {
@@ -335,9 +336,15 @@ header h1.compressed {
     -o-transition: border-color 0.2s ease;
     transition: border-color 0.2s ease;
 }
+
 .content a:hover {
     border-color: #fd7f05;
 }
+
+.archive a {
+    border-bottom: none;
+}
+
 footer {
     font-family: sans-serif;
     font-weight: normal;
@@ -406,5 +413,10 @@ footer {
 #disqus_loader:hover {
   background-color: red;
   color:#fff;
+}
+
+.content dt {
+    border-bottom: 2px solid #fecd9d; 
+    display:inline;  
 }
 

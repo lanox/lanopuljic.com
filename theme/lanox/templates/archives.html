@@ -6,12 +6,16 @@
 
 {% block content %}
 
-<h1>Archives</h1>
-
-<dl>
-{% for article in dates %}
-    <dt>{{ article.locale_date }}</dt>
-    <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-{% endfor %}
-</dl>
+<div class="container content">
+  <dl>
+    {% for article in dates %}
+      <dt>{{ article.locale_date }}</dt>
+        <dd>
+          <div class="archive">
+            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+          </div>        
+        </dd>
+    {% endfor %}
+  </dl>
 {% endblock %}
+</div>

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% block head %}
   {{ super() }}
   {% for keyword in article.keywords %}
@@ -13,20 +14,19 @@
 {% endblock %}
 {% block content %}
 
-  <div class="container content">
-      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-
- <div class="date">
- <i class="fa fa-calendar"></i> {{ article.locale_date }}
-  {% if article.authors %}
-      {% for author in article.authors %}
-          <span class="author" href="{{ SITEURL }}/{{ author.url }}">&nbsp; <i class="fa fa-user"></i> {{ author }}</a></span>
-        {% endfor %}
-      {% endif %}
-</div>
+<div class="container content">
+  <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+    <div class="date">
+      <i class="fa fa-calendar"></i> {{ article.locale_date }}
+        {% if article.authors %}
+          {% for author in article.authors %}
+            <span class="author" href="{{ SITEURL }}/{{ author.url }}">&nbsp; <i class="fa fa-user"></i> {{ author }}</a></span>
+          {% endfor %}
+        {% endif %}
+    </div>
     {{ article.content }}
-  </div>
-              {% if DISQUS_SITENAME %}
-                {% include 'include/disqus.html' %}
-            {% endif %}
+</div>
+{% if DISQUS_SITENAME %}
+  {% include 'include/disqus.html' %}
+{% endif %}
 {% endblock %}
