@@ -1,4 +1,6 @@
-<div id='disqus_loader' onclick="load_disqus()"><i class="fa fa-comments"></i>&nbsp;Load comments</div>
+{% if DISQUS_SITENAME %}
+<div id="disqus_thread">
+  <div id='disqus_loader' onclick="load_disqus()"><i class="fa fa-comments"></i>&nbsp;Load comments</div>
 
 <script type="text/javascript">
   function load_disqus()
@@ -11,4 +13,5 @@
     ldr.parentNode.removeChild(ldr);
   }
 </script>
-<br>
+</div>
+{% endif %}
