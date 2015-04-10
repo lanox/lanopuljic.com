@@ -28,7 +28,8 @@ ARTICLE_SAVE_AS = '{date:%Y}/{date:%b}/{slug}.html'
 PAGE_URL = '{date:%Y}/{date:%b}/{slug}.html'
 PAGE_SAVE_AS = '{date:%Y}/{date:%b}/pages/{slug}.html'
 
-
+# Delete the output directory, before generating new files
+DELETE_OUTPUT_DIRECTORY = True
 
 # Theme settings --------------------------------------------------------------
 
