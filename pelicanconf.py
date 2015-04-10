@@ -51,7 +51,7 @@ COVER_IMG_URL = 'theme/images/logo1.jpg'
 DISQUS_SITENAME = "lanopuljic"
 
 # Set menu buttons on side bar
-MENU_ITEMS = [('Archives', 'archives.html'), ('About', '/pages/about.html'), ('Work', '/pages/work.html'),]
+MENU_ITEMS = [('Archives', '/archives.html'), ('About', '/pages/about.html'), ('Work', '/pages/work.html'),]
 
 # Custome FOOTER Text
 FOOTER_TEXT = ' builds things by banging on a keyboard.'
