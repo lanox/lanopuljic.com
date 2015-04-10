@@ -2,4 +2,6 @@ output/*
 cache/
 __pycache__/
 theme/lanox.old
+theme/alchemy
+theme/lanox_10042015
 
