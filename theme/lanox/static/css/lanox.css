@@ -52,6 +52,7 @@ header .logo:hover {
 }
 .menu ul a {
     text-decoration: none;
+    text-transform: uppercase;
     padding: 5px 10px;
     -webkit-transition: background-color 0.3s ease;
     -moz-transition: background-color 0.3s ease;
@@ -60,9 +61,10 @@ header .logo:hover {
     transition: background-color 0.3s ease;
 }
 .menu ul a:hover {
-    text-decoration: overline;
+    border-bottom: 2px solid #7f8c8d;
     color: #fd7f05;
 }
+
 .menu ul li {
     display: inline;
 }

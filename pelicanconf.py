@@ -43,6 +43,7 @@ SOCIAL = (('github', 'http://github.com/lanox'),
 GOOGLE_FONTS = [
 "Lato:400,700",
 "Source Code Pro",
+"Nunito:300",
 ]
 
 # DISPLAY COVER IMAGE 
