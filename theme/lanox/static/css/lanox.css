@@ -12,7 +12,7 @@ img {
 }
 header .logo {
     opacity: .75;
-    position: fixed;
+    position: absolute;
     left: 10px;
     top: -30px;
     -webkit-transition: opacity 0.3s ease;
@@ -431,5 +431,8 @@ footer {
   padding-left: 20px;
 }
 .col-work img:not(.emoji) {
- margin-left: 10px    
+ margin-left: 10px;
+ min-width: 150px;
+ max-width: 150px;
+ border: 1px solid #dddddd;
 }
