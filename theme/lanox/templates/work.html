@@ -3,8 +3,23 @@
 
 {% block content %}
 <div class="container content">
-    <h1>{{ page.title }}</h1>
+  <div class="employer_row">
+    <h2>Employer</h2>
+      <div class="col-work">
+        <a href="http://tyro.com">
+          <img src="{{ STATIC }}/images/work/tyro.png">
+        </a>
+      </div>  
+  </div>
+  <div class="employer_row">
+    <h2>Previous Employers</h2>
+  </div>
+    <div class="col-work">
+        <a href="http://tyro.com">
+          <img src="{{ STATIC }}/images/work/tyro.png">
+        </a>
+      </div>  
 
-    {{ page.content }}
+
 </div>
 {% endblock %}

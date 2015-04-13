@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
@@ -47,7 +48,9 @@ GOOGLE_FONTS = [
 ]
 
 # DISPLAY COVER IMAGE 
-COVER_IMG_URL = 'theme/images/logo1.jpg'
+COVER_IMG_URL = '/images/logo1.jpg'
+
+STATIC_PATHS = ['images']
 
 DISQUS_SITENAME = "lanopuljic"
 
