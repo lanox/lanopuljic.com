@@ -10,7 +10,9 @@
 
     <title>{% block title %}{{ SITE_SUBTEXT }}{% endblock title %}</title>
 
-
+{% if FAVICON %}
+        <link rel="shortcut icon" href="{{FAVICON}}" type="image/x-icon" />
+{% endif %}
 {% if FEED_ATOM %}
     <link rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" title="{{ SITENAME }} Atom Feed"/>
 {% endif %}

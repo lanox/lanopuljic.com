@@ -23,7 +23,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-#URLs
+# URLs
 ARTICLE_URL = '{date:%Y}/{date:%b}/{slug}.html'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%b}/{slug}.html'
 PAGE_URL = '{date:%Y}/{date:%b}/{slug}.html'
@@ -42,30 +42,32 @@ SOCIAL = (('github', 'http://github.com/lanox'),
 
 # GOOGLE FONTS
 GOOGLE_FONTS = [
-"Lato:400,700",
-"Source Code Pro",
-"Nunito:300",
+    "Lato:400,700",
+    "Source Code Pro",
+    "Nunito:300",
 ]
 
-# DISPLAY COVER IMAGE 
-COVER_IMG_URL = '/images/logo1.jpg'
+# DISPLAY COVER IMAGE
+COVER_IMG_URL = '/images/logo.jpg'
+
+# FAVICON
+FAVICON = '/images/favicon.png'
 
 STATIC_PATHS = ['images']
 
 DISQUS_SITENAME = "lanopuljic"
 
 # Set menu buttons on side bar
-MENU_ITEMS = [('Archives', '/archives.html'), ('About', '/pages/about.html'), ('Work', '/pages/work.html'),]
+MENU_ITEMS = [('Archives', '/archives.html'),
+              ('About', '/pages/about.html'), ('Work', '/pages/work.html'), ]
 
 # Custome FOOTER Text
 FOOTER_TEXT = ' builds things by banging on a keyboard.'
 
-#TAGLINE - Used for the page titles and some meta tags.
+# TAGLINE - Used for the page titles and some meta tags.
 TAGLINE = 'Life is binary, zeros and ones.'
 
-#GOOGLE_ANALYTICS - Set the Google Analytics code (eg. "UA-000000-00")
-
-
+# GOOGLE_ANALYTICS - Set the Google Analytics code (eg. "UA-000000-00")
 
 
 # Displays page number on main page.
