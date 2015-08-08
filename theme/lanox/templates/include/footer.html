@@ -3,5 +3,10 @@
       <div class="bio">
       <br>
         <a href="https://twitter.com/lanox_" class="twitter-follow">@lano</a>{{ FOOTER_TEXT }}
+          <ul class="social">
+          {% for name, link in SOCIAL %}
+            <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
+          {% endfor %}
+        </ul>
     </div>
   </footer>

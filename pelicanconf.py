@@ -37,8 +37,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Social widget
 SOCIAL = (('github', 'http://github.com/lanox'),
-          ('twitter', '#'),
-          ('bitbucket', 'https://bitbucket.org/lanox'),)
+          ('linkedin', 'https://br.linkedin.com/in/lanopuljic/en'),)
 
 # GOOGLE FONTS
 GOOGLE_FONTS = [

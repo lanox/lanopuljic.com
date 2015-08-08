@@ -436,3 +436,50 @@ footer {
  max-width: 150px;
  border: 1px solid #dddddd;
 }
+
+ul.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+}
+aside a {
+  color: #ffffff;
+}
+
+ul.social {
+  font-size: 1.6em;
+}
+ul.social li {
+  display: inline;
+}
+ul.social a:hover {
+  z-index: 2;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+ul.social a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  /*border-radius: 100%;*/
+  text-align: center;
+  font-size: .8em;
+  line-height: 36px;
+  color: #fff
+}
+ul.social a.sc-linkedin {
+  background-color: #3371b7;
+}
+ul.social a.sc-twitter {
+  background-color: #4da7de;
+}
+ul.social a.sc-github,
+ul.social a.sc-github-alt {
+  background-color: #111010;
+}
