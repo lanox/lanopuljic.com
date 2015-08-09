@@ -60,7 +60,7 @@ DISQUS_SITENAME = "lanopuljic"
 # Set menu buttons on side bar
 MENU_ITEMS = [('Home', '/'),
               ('About', '/pages/about.html'), ('Work', '/pages/work.html'),
-              ('Archives', '/archives.html'),]
+              ('Archives', '/archives.html'), ]
 
 # Custome FOOTER Text
 FOOTER_TEXT = ' builds things by banging on a keyboard.'
@@ -69,7 +69,7 @@ FOOTER_TEXT = ' builds things by banging on a keyboard.'
 TAGLINE = 'Life is binary, zeros and ones.'
 
 # GOOGLE_ANALYTICS - Set the Google Analytics code (eg. "UA-000000-00")
-
+GOOGLE_ANALYTICS = 'UA-51180854-1'
 
 # Displays page number on main page.
 DEFAULT_PAGINATION = False
