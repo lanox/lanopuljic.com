@@ -25,6 +25,9 @@
         {% endif %}
     </div>
     {{ article.content }}
+    {% if ADD_THIS_ID %}
+    <div class="addthis_native_toolbox"></div>
+  {% endif %}
 </div>
 <br>
 {% if DISQUS_SITENAME %}

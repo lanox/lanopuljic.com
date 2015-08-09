@@ -71,5 +71,7 @@ TAGLINE = 'Life is binary, zeros and ones.'
 # GOOGLE_ANALYTICS - Set the Google Analytics code (eg. "UA-000000-00")
 GOOGLE_ANALYTICS = 'UA-51180854-1'
 
+ADD_THIS_ID = 'ra-55c72deca9344b40'
+
 # Displays page number on main page.
 DEFAULT_PAGINATION = False
