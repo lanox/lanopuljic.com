@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
@@ -8,7 +7,7 @@ from __future__ import unicode_literals
 # Basic
 AUTHOR = u'Lano'
 SITENAME = '#! Shit Lano Says'
-SITEURL = 'http://lano.puljic.com'
+SITEURL = 'http://lanopuljic.com'
 SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
 DEFAULT_LANG = 'en'
 OG_LOCALE = u'en_US'
