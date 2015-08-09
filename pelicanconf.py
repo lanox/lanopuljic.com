@@ -51,15 +51,16 @@ GOOGLE_FONTS = [
 COVER_IMG_URL = '/images/logo.jpg'
 
 # FAVICON
-FAVICON = '/images/favicon.png'
+FAVICON = SITEURL + '/images/favicon.png'
 
 STATIC_PATHS = ['images']
 
 DISQUS_SITENAME = "lanopuljic"
 
 # Set menu buttons on side bar
-MENU_ITEMS = [('Archives', '/archives.html'),
-              ('About', '/pages/about.html'), ('Work', '/pages/work.html'), ]
+MENU_ITEMS = [('Home', '/'),
+              ('About', '/pages/about.html'), ('Work', '/pages/work.html'),
+              ('Archives', '/archives.html'),]
 
 # Custome FOOTER Text
 FOOTER_TEXT = ' builds things by banging on a keyboard.'
