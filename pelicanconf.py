@@ -6,10 +6,12 @@ from __future__ import unicode_literals
 # Pelican settings ------------------------------------------------------------
 
 # Basic
+AUTHOR = u'Lano'
 SITENAME = '#! Shit Lano Says'
-SITEURL = ''
-AUTHOR = 'Lano'
+SITEURL = 'http://lano.puljic.com'
+SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
 DEFAULT_LANG = 'en'
+OG_LOCALE = u'en_US'
 THEME = 'theme/lanox/'
 TIMEZONE = 'Australia/Sydney'
 
