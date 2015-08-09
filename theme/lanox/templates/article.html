@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block head %}
+{% block meta %}
 <meta name="author" content="{{ article.author.name }}" />
 <meta name="description" content="{{ article.summary|striptags }}" />
 <meta name="keywords" content="{{ article.tags|join(', ') }}">
@@ -10,7 +10,6 @@
 {% block title %} &ndash; {{ article.title }}{% endblock %}
 
 {% block content %}
-
 <div class="container content">
   <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
     <div class="date">

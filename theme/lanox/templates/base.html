@@ -20,12 +20,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-{% block head %}
+{% block meta %}
 <meta name="author" content="{{ AUTHOR }}" />
 <meta name="description" content="{{ SITEDESCRIPTION }}" />
 {% include "include/og.html" %}
-{% endblock head %}
-<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+{% endblock %}
+<title>{{ SITENAME }}{% block title %}{% endblock %}</title>
 </head>
 
 <header>
