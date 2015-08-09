@@ -250,6 +250,7 @@ header .logo:hover {
     clear: both;
     margin-top: 50px;
 }
+/* Footer  */
 footer {
     margin-bottom: 2rem;
 }
@@ -257,7 +258,7 @@ footer .bio {
     color: rgba(0, 0, 0, 0.61);
     text-align: center;
     font-size: 14px;
-    line-height: 40px;
+    /*line-height: 40px;*/
     text-transform: uppercase;
 }
 footer .bio a {
@@ -268,11 +269,13 @@ footer .bio a {
     footer {
     text-align: center;
 }
+/* Hids footer content for mobile view. */
 footer .bio {
-    display: none;
+    /* display: none; */
+    font-size: 11px
     }
 }
-
+/* Footer ends here */
 html {
     font-size: 16px;
     font-family: "lato", "sans-serif";
@@ -436,11 +439,12 @@ footer {
  max-width: 150px;
  border: 1px solid #dddddd;
 }
-
+/* Social Buttons in footer */
 ul.social {
+  font-size: 1.6em;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 0px;
 }
 
 aside {
@@ -452,9 +456,6 @@ aside a {
   color: #ffffff;
 }
 
-ul.social {
-  font-size: 1.6em;
-}
 ul.social li {
   display: inline;
 }
@@ -483,3 +484,4 @@ ul.social a.sc-github,
 ul.social a.sc-github-alt {
   background-color: #111010;
 }
+/* Social Buttons in footer ends here */
