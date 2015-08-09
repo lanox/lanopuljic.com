@@ -5,13 +5,14 @@ from __future__ import unicode_literals
 # Pelican settings ------------------------------------------------------------
 
 # Basic
-AUTHOR = u'Lano'
-SITENAME = u'#! Shit Lano Says'
-SITEURL = u'http://lanopuljic.com'
-SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
-SITELOGO = u'http://lanopuljic.com/images/linkedin_logo.png'
+AUTHOR = 'Lano'
+SITENAME = '#! Shit Lano Says'
+SITEURL = 'http://localhost:8000'
+SITEURL = ''
+SITEDESCRIPTION = '%s\'s Thoughts and Writings' % AUTHOR
+SITELOGO = 'http://lanopuljic.com/images/linkedin_logo.png'
 DEFAULT_LANG = 'en'
-OG_LOCALE = u'en_US'
+OG_LOCALE = 'en_US'
 THEME = 'theme/lanox/'
 TIMEZONE = 'Australia/Sydney'
 

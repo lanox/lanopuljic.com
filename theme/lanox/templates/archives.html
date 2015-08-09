@@ -1,13 +1,11 @@
 {% extends "base.html" %}
-
-{% block title %}
-  {{ SITENAME }} &mdash; Archives
-{% endblock %}
+{% block title %} &ndash; Archives{% endblock %}
 
 {% block content %}
 
 <div class="container content">
   <dl>
+  <h1>Archives</h1>
     {% for article in dates %}
       <dt>{{ article.locale_date }}</dt>
         <dd>
