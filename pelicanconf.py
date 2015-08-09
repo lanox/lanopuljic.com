@@ -8,7 +8,6 @@ from __future__ import unicode_literals
 # Basic
 SITENAME = '#! Shit Lano Says'
 SITEURL = ''
-
 AUTHOR = 'Lano'
 DEFAULT_LANG = 'en'
 THEME = 'theme/lanox/'
@@ -34,7 +33,6 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Theme settings --------------------------------------------------------------
 
-
 # Social widget
 SOCIAL = (('github', 'http://github.com/lanox'),
           ('twitter', 'http://github.com/lanox'),
@@ -55,6 +53,7 @@ FAVICON = SITEURL + '/images/favicon.png'
 
 STATIC_PATHS = ['images']
 
+# DISQUS Comments
 DISQUS_SITENAME = "lanopuljic"
 
 # Set menu buttons on side bar
@@ -71,6 +70,7 @@ TAGLINE = 'Life is binary, zeros and ones.'
 # GOOGLE_ANALYTICS - Set the Google Analytics code (eg. "UA-000000-00")
 GOOGLE_ANALYTICS = 'UA-51180854-1'
 
+# SHARE BUTTONS
 ADD_THIS_ID = 'ra-55c72deca9344b40'
 
 # Displays page number on main page.
