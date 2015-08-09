@@ -7,7 +7,7 @@ from __future__ import unicode_literals
 # Basic
 AUTHOR = u'Lano'
 SITENAME = u'#! Shit Lano Says'
-SITEURL = u'http://localhost:8000'
+SITEURL = u'http://lanopuljic.com'
 SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
 SITELOGO = u'http://lanopuljic.com/images/linkedin_logo.png'
 DEFAULT_LANG = 'en'
