@@ -11,23 +11,25 @@
 
 {% block content %}
 <div class="container content">
-  <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-    <div class="date">
-      <i class="fa fa-calendar"></i> {{ article.locale_date }}
-        {% if article.authors %}
-          {% for author in article.authors %}
-            <span class="author" href="{{ SITEURL }}/{{ author.url }}">&nbsp; <i class="fa fa-user"></i> {{ author }}</a></span>
-          {% endfor %}
-        {% endif %}
-    </div>
-    {{ article.content }}
-    {% if ADD_THIS_ID %}
-    <div class="addthis_native_toolbox"></div>
+  <div class="article_title">
+    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+  </div>
+  <div class="date">
+    <i class="fa fa-calendar"></i> {{ article.locale_date }}
+    {% if article.authors %}
+    {% for author in article.authors %}
+    <span class="author" href="{{ SITEURL }}/{{ author.url }}">&nbsp; <i class="fa fa-user"></i> {{ author }}</a></span>
+    {% endfor %}
+    {% endif %}
+  </div>
+  {{ article.content }}
+  {% if ADD_THIS_ID %}
+  <div class="addthis_native_toolbox"></div>
   {% endif %}
 </div>
 <br>
 {% if DISQUS_SITENAME %}
-  {% include 'include/disqus.html' %}
+{% include 'include/disqus.html' %}
 {% endif %}
 <br>
 {% endblock %}
