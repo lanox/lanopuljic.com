@@ -14,7 +14,7 @@
   <div class="article_title">
     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
   </div>
-  <div class="date">
+  <div class="articel_date">
     <i class="fa fa-calendar"></i> {{ article.locale_date }}
     {% if article.authors %}
     {% for author in article.authors %}
@@ -22,6 +22,7 @@
     {% endfor %}
     {% endif %}
   </div>
+
   {{ article.content }}
   {% if ADD_THIS_ID %}
   <div class="addthis_native_toolbox"></div>
