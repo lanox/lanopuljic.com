@@ -3,9 +3,7 @@ Date: 2014-05-30 14:37:56 +1000
 Category: Linux
 Tags: logs
 Author: Lano Puljic
-email: lano.puljic@gmail.com
 Summary: How to rotate logs using logrotate
-
 
 Logrotate  is  designed to ease administration of systems that generate large numbers of log files.  It allows automatic rotation, compression, removal, and mailing of log files.   Eachlog file may be handled daily, weekly, monthly, or when it grows too large.
 
@@ -35,7 +33,6 @@ Some examplet are listed below :
 
 ```bash
 cat /etc/logrotate.d/yum
-
 	/var/log/yum.log {
     	missingok
     	notifempty
@@ -51,7 +48,6 @@ If you want to rotate a log file (for example, /tmp/mylog.log) for every 100MB, 
 
 ```bash
 vi /etc/logrotate.d/mylog
-
 	/var/log/mylog.log {
     	size 100M
     	create 0700 root root

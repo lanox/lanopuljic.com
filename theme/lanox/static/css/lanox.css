@@ -102,6 +102,7 @@ header .logo:hover {
 .content {
     padding: 0 2rem;
 }
+
 .content .date {
     float: left;
     margin-top: 7px;
@@ -347,11 +348,7 @@ header h1.compressed {
     font-size: 7vw;
     line-height: 7vw !important;
 }
-}.content .article_date {
-    font-family: sans-serif;
-    font-weight: normal;
-    font-size: 13px;
-}
+
 .content p {
     margin: 1rem 0 1rem 0;
 }
@@ -368,6 +365,13 @@ header h1.compressed {
     -o-transition: border-color 0.2s ease;
     transition: border-color 0.2s ease;
     font-size: 2.0em;
+}
+
+}.content .article_date {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
 }
 
 .article_title a {
@@ -392,7 +396,7 @@ footer {
     font-size: 1.02em;
     }
 }
-
+/* CUSTOMISING HIGHLIGHT CODE BOX */
 .highlight {
     min-width: 110%;
     max-width: 110%;
@@ -427,9 +431,39 @@ footer {
     background: none;
 }
 
+.highlight {
+    min-width: 110%;
+    max-width: 110%;
+    margin-left: -5%;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    font-size: 13px;
+    text-shadow: none;
+    color: #111;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.highlight pre {
+    padding: 15px 5%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+@media (max-width: 38em) {
+    .highlight {
+    max-width: 110vw;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    border-radius: inherit;
+}
+.highlight pre {
+    padding: 15px 2rem;
+    }
+}
+
 .comments {
   padding: 50px 0 0;
 }
+/* CUSTOMISING HIGHLIGHT CODE BOX ENDS */
 
 #disqus_loader {
   width: 140px;
@@ -451,11 +485,6 @@ footer {
 #disqus_loader:hover {
   background-color: red;
   color:#fff;
-}
-
-.content dt {
-    border-bottom: 2px solid #fecd9d; 
-    display:inline;  
 }
 
 .employer_row {
@@ -586,9 +615,7 @@ header .logo:hover {
 .menu ul li {
     display: inline;
 }
-.content {
-    padding: 0 2rem;
-}
+
 .content .date {
     /*float: left;*/
     margin-top: 7px;
@@ -876,6 +903,7 @@ header h1.compressed {
 
 .archive a {
     border-bottom: none;
+    font-size: 1em;
 }
 
 footer {
@@ -887,39 +915,6 @@ footer {
     html {
     font-size: 1.02em;
     }
-}
-
-.highlight {
-    min-width: 110%;
-    max-width: 110%;
-    margin-left: -5%;
-    border-radius: 5px;
-    background-color: #fbfbfb;
-    font-size: 13px;
-    text-shadow: none;
-    color: #111;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-}
-.highlight pre {
-    padding: 15px 5%;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-@media (max-width: 38em) {
-    .highlight {
-    max-width: 110vw;
-    margin-left: -2rem;
-    margin-right: -2rem;
-    border-radius: inherit;
-}
-.highlight pre {
-    padding: 15px 2rem;
-    }
-}
-
-.highlight pre {
-    background: none;
 }
 
 .comments {
