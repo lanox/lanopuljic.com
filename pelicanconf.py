@@ -48,6 +48,9 @@ GOOGLE_FONTS = [
     "Nunito:300",
 ]
 
+#GOOGLE WEB MASTER
+GOOGLE_WEBMASTER = '-nhqUFIBYvwQ-lIEYF-ECAc4rJn_WmX_s7kdo582JqE'
+
 # DISPLAY COVER IMAGE
 COVER_IMG_URL = '/images/logo.jpg'
 
