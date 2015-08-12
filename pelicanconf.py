@@ -7,14 +7,14 @@ from __future__ import unicode_literals
 # Basic
 AUTHOR = 'Lano'
 SITENAME = '#! Shit Lano Says'
-SITEURL = 'http://lanopuljic.com'
-#SITEURL = 'http://localhost:8000'
+SITEURL = 'http://localhost:8000'
 SITEDESCRIPTION = '%s\'s Thoughts and Writings' % AUTHOR
 SITELOGO = 'http://lanopuljic.com/images/linkedin_logo.png'
 DEFAULT_LANG = 'en'
 OG_LOCALE = 'en_US'
 THEME = 'theme/lanox/'
 TIMEZONE = 'Australia/Sydney'
+DEFAULT_DATE_FORMAT = ('%d %B %Y')
 
 PATH = 'content'
 
@@ -47,9 +47,6 @@ GOOGLE_FONTS = [
     "Source Code Pro",
     "Nunito:300",
 ]
-
-#GOOGLE WEB MASTER
-GOOGLE_WEBMASTER = '-nhqUFIBYvwQ-lIEYF-ECAc4rJn_WmX_s7kdo582JqE'
 
 # DISPLAY COVER IMAGE
 COVER_IMG_URL = '/images/logo.jpg'

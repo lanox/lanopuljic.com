@@ -1,5 +1,5 @@
 Title: Alert by email when server is up and running
-Date: 2014-05-19 09:36:56 +1000
+Date: 19-05-2014 09:36:56 +1000
 Category: Linux
 Tags: linux,bash
 Author: Lano Puljic
