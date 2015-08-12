@@ -13,6 +13,9 @@
 {% if GOOGLE_FONTS %}
 <link href="//fonts.googleapis.com/css?family={{ GOOGLE_FONTS | join('|') | replace(' ', '+') }}" rel="stylesheet" type="text/css">
 {% endif %}
+{% if GOOGLE_WEBMASTER %}
+<meta name="google-site-verification" content='{{GOOGLE_WEBMASTER}}' />
+{% endif %}
 <link href="{{ SITEURL }}/theme/css/lanox.css" rel="stylesheet">
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -56,7 +59,6 @@
   {% block content %}{% endblock %}
   {% include "include/footer.html" %}
   {% include "include/ga.html" %}
-  {% include "include/gwm.html" %}
   {% if ADD_THIS_ID %}
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ ADD_THIS_ID }}" async="async"></script>
   {% endif %}
