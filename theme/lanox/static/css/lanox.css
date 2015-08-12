@@ -1,3 +1,33 @@
+html {
+    font-size: 16px;
+    font-family: "lato", "sans-serif";
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+    color: #8C8C8C;
+    font-weight: normal;
+    /*font-family: sans-serif;*/
+}
+h1 {
+  font-size: 2.4em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.36em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1.1em;
+}
+
 body {
     margin: 0;
 }
@@ -280,35 +310,6 @@ footer .bio {
     }
 }
 /* Footer ends here */
-html {
-    font-size: 16px;
-    font-family: "lato", "sans-serif";
-    line-height: 1.6;
-}
-
-h1, h2, h3, h4, h5, h6, b, strong {
-    color: #8C8C8C;
-    font-weight: normal;
-    /*font-family: sans-serif;*/
-}
-h1 {
-  font-size: 2.4em;
-}
-h2 {
-  font-size: 2em;
-}
-h3 {
-  font-size: 1.6em;
-}
-h4 {
-  font-size: 1.36em;
-}
-h5 {
-  font-size: 1.2em;
-}
-h6 {
-  font-size: 1.1em;
-}
 
 b, strong {
     color: #1a898a;
@@ -380,6 +381,14 @@ header h1.compressed {
 
 .content a:hover {
     border-color: #fd7f05;
+}
+
+
+.archive {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin: 0 auto;
+  max-width: 40rem;
 }
 
 .archive a {
@@ -468,11 +477,14 @@ footer {
 .employer_row {
   margin-left: -15px;
   margin-right: -15px;
+  margin: 0 auto;
+  max-width: 40rem;
 }
 
 .col-work {
   padding-left: 20px;
 }
+
 .col-work img:not(.emoji) {
  margin-left: 10px;
  min-width: 150px;
