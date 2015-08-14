@@ -16,6 +16,7 @@
 <link href="{{ SITEURL }}/theme/css/lanox.css" rel="stylesheet">
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="{{ SITEURL }}/theme/js/jquery-1.11.3.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -51,11 +52,10 @@
  </div>
 <!-- Menu ends above this comment -->
 </header>
-
 <body>
-  {% block content %}{% endblock %}
-  {% include "include/gotop.html" %}
+ {% block content %}{% endblock %}
   {% include "include/footer.html" %}
+  {% include "include/gotop.html" %}
   {% include "include/ga.html" %}
   {% if ADD_THIS_ID %}
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ ADD_THIS_ID }}" async="async"></script>

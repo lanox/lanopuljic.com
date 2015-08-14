@@ -4,7 +4,24 @@ html {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6, b, strong {
+body {
+    margin: 0;
+}
+body.full .hero {
+    height: 500px;
+}
+body.full h1, body.full footer {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+b,
+strong {
     color: #8C8C8C;
     font-weight: normal;
     /*font-family: sans-serif;*/
@@ -28,15 +45,6 @@ h6 {
   font-size: 1.1em;
 }
 
-body {
-    margin: 0;
-}
-body.full .hero {
-    height: 500px;
-}
-body.full h1, body.full footer {
-    display: none;
-}
 img {
     border: 0;
 }
@@ -365,11 +373,12 @@ header h1.compressed {
     -ms-transition: border-color 0.2s ease;
     -o-transition: border-color 0.2s ease;
     transition: border-color 0.2s ease;
-    font-size: 2.0em;
+    /*font-size: 2.0em;*/
 }
 
 .article_title a {
     text-decoration: underline;
+    font-size: 2em;
 }
 
 .content .article_date {
@@ -537,3 +546,17 @@ ul.social a.sc-github-alt {
   background-color: #111010;
 }
 /* Social Buttons in footer ends here */
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  color: white;
+  background-color: rgba(232, 98, 86, 0.8);
+  font-size: 12px;
+  padding: 1em;
+  text-align: center;
+}
+
+.go-top:hover {
+  background-color: #e86256;
+}
