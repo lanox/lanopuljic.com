@@ -400,6 +400,13 @@ header h1.compressed {
   max-width: 40rem;
 }
 
+.archive, h1, dl {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
 .archive a {
     border-bottom: none;
     font-size: 1em;

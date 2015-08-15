@@ -6,9 +6,9 @@ from __future__ import unicode_literals
 
 # Basic
 AUTHOR = 'Lano'
-SITENAME = '#! Shit Lano Says'
+#SITENAME = '#! Shit Lano Says'
 SITEURL = 'http://lanopuljic.com'
-#SITEURL = 'http://localhost:8000'
+SITEURL = 'http://localhost:8000'
 SITEDESCRIPTION = '%s\'s Thoughts and Writings' % AUTHOR
 SITELOGO = 'http://lanopuljic.com/images/linkedin_logo.png'
 DEFAULT_LANG = 'en'
@@ -31,6 +31,8 @@ ARTICLE_URL = '{date:%Y}/{date:%b}/{slug}.html'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%b}/{slug}.html'
 PAGE_URL = '{date:%Y}/{date:%b}/{slug}.html'
 PAGE_SAVE_AS = '{date:%Y}/{date:%b}/pages/{slug}.html'
+YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
 
 # Delete the output directory, before generating new files
 DELETE_OUTPUT_DIRECTORY = True
