@@ -24,8 +24,8 @@ b,
 strong {
     color: #8C8C8C;
     font-weight: normal;
-    /*font-family: sans-serif;*/
 }
+
 h1 {
   font-size: 2.4em;
 }
@@ -48,6 +48,7 @@ h6 {
 img {
     border: 0;
 }
+
 header .logo {
     opacity: .75;
     position: absolute;
@@ -59,9 +60,11 @@ header .logo {
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
+
 header .logo:hover {
     opacity: 1;
 }
+
 @media (max-width: 75em) {
     header .logo {
     position: absolute;
@@ -81,13 +84,16 @@ header .logo:hover {
     width: 25%;
     background-color: #fd7f05;
 }
+
 .menu {
     text-align: center;
     margin-bottom: 50px;
 }
+
 .menu ul {
     padding-left: 0;
 }
+
 .menu ul a {
     text-decoration: none;
     text-transform: uppercase;
@@ -98,6 +104,7 @@ header .logo:hover {
     -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
 }
+
 .menu ul a:hover {
     border-bottom: 2px solid #7f8c8d;
     color: #fd7f05;
@@ -106,9 +113,11 @@ header .logo:hover {
 .menu ul li {
     display: inline;
 }
+
 .content {
     padding: 0 2rem;
 }
+
 .content .date {
     float: left;
     margin-top: 7px;
@@ -118,13 +127,13 @@ header .logo:hover {
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.47);
 }
+
 @media (max-width: 1100px) {
     .content .date {
         float: none;
         margin-left: 0;
         text-align: left;
         width: 250px
-
     }
     .content .date .author {
         float: none;
@@ -139,29 +148,29 @@ header .logo:hover {
     padding: 2px 4px;
     color: #1a898a;
 }
+
 .content blockquote {
-    position: relative;
-    min-width: 110%;
-    max-width: 110%;
-    margin-left: -5%;
-    background-color: #306E73;
-    border-radius: 5px;
-    color: #FE5335;
+  padding: 10px 20px;
+  font-size: 1.1em;
 }
-.content blockquote:before {
-    font-family: "Times New Roman";
-    content: "“";
-    position: absolute;
-    top: -5px;
-    left: 10px;
-    font-size: 35px;
-    font-weight: bold;
-    color: #fecd9d;
+
+.content blockquote {
+  background-color: rgba(128, 128, 128, 0.05);
+  border-bottom-right-radius: 5px;
+  border-left: 8px solid rgba(255, 6, 6, 0.075);
+  border-left-width: 10px;
 }
+
 .content blockquote p {
     margin: 0;
-    padding: 15px 5%
 }
+
+.content samp {
+  white-space: pre;
+  display: block;
+  overflow-x: auto;
+}
+
 @media (max-width: 38em) {
     .content blockquote {
     max-width: 110vw;
@@ -174,17 +183,13 @@ header .logo:hover {
     }
 }
 
-/* Styles Orange line under the menu.
-.content hr {
-    margin: 50px auto;
-}*/
 
-.content img:not(.emoji) {
-    /*min-width: 110%;
-    max-width: 110%;*/
+/*.content img:not(.emoji) {
+    --min-width: 110%;
+    --max-width: 110%;
     margin-left: -5%;
     border-radius: 5px;
-}
+}*/
 
 @media (max-width: 38em) {
     .content img: not(.emoji) {
@@ -360,9 +365,6 @@ header h1.compressed {
 }
 .content p {
     margin: 1rem 0 1rem 0;
-}
-.content blockquote {
-    font-size: 1.1rem;
 }
 
 .content a {
