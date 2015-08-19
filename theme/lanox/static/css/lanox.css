@@ -184,12 +184,12 @@ header .logo:hover {
 }
 
 
-/*.content img:not(.emoji) {
+.content img:not(.emoji) {
     --min-width: 110%;
     --max-width: 110%;
     margin-left: -5%;
     border-radius: 5px;
-}*/
+}
 
 @media (max-width: 38em) {
     .content img: not(.emoji) {
@@ -201,15 +201,6 @@ header .logo:hover {
 
 .content .twitter-tweet {
     width: 110% !important;
-}
-
-.content .aside {
-    background-color: rgba(253, 127, 5, 0.15);
-    padding: 10px 15px;
-    color: #1a898a;
-    font-size: .75rem;
-    font-family: "lato", "sans-serif";
-    font-style: normal;
 }
 
 .hero {
@@ -305,7 +296,6 @@ footer .bio {
     color: rgba(0, 0, 0, 0.61);
     text-align: center;
     font-size: 14px;
-    /*line-height: 40px;*/
     text-transform: uppercase;
 }
 footer .bio a {
@@ -318,7 +308,6 @@ footer .bio a {
 }
 /* Hids footer content for mobile view. */
 footer .bio {
-    /* display: none; */
     font-size: 11px
     }
 }
@@ -378,22 +367,21 @@ header h1.compressed {
     /*font-size: 2.0em;*/
 }
 
+.content a:hover {
+    border-color: #fd7f05;
+}
+
 .article_title a {
     text-decoration: underline;
     font-size: 2em;
 }
 
-.content .article_date {
+.article_date {
     font-family: sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 13px;
 }
-
-.content a:hover {
-    border-color: #fd7f05;
-}
-
 
 .archive {
   margin-left: -15px;
@@ -502,6 +490,7 @@ footer {
  max-width: 150px;
  border: 1px solid #dddddd;
 }
+
 /* Social Buttons in footer */
 ul.social {
   font-size: 1.6em;
@@ -510,43 +499,39 @@ ul.social {
   padding: 0px;
 }
 
-aside {
-  background-color: #333333;
-  color: #ffffff;
-  text-align: center;
-}
-aside a {
-  color: #ffffff;
-}
-
 ul.social li {
   display: inline;
 }
+
 ul.social a:hover {
   z-index: 2;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
+
 ul.social a {
   display: inline-block;
   width: 36px;
   height: 36px;
-  /*border-radius: 100%;*/
   text-align: center;
   font-size: .8em;
   line-height: 36px;
   color: #fff
 }
+
 ul.social a.sc-linkedin {
   background-color: #3371b7;
 }
+
 ul.social a.sc-twitter {
   background-color: #4da7de;
 }
+
 ul.social a.sc-github,
 ul.social a.sc-github-alt {
   background-color: #111010;
 }
+
 /* Social Buttons in footer ends here */
 .go-top {
   position: fixed;
