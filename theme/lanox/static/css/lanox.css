@@ -155,9 +155,9 @@ header .logo:hover {
 }
 
 .content blockquote {
-  background-color: rgba(128, 128, 128, 0.05);
+  background-color: rgba(128, 128, 128, 0.16);
   border-bottom-right-radius: 5px;
-  border-left: 8px solid rgba(255, 6, 6, 0.075);
+  border-left: 8px solid rgba(255, 6, 6, 0.09);
   border-left-width: 10px;
 }
 
@@ -187,7 +187,7 @@ header .logo:hover {
 .content img:not(.emoji) {
     --min-width: 110%;
     --max-width: 110%;
-    margin-left: -5%;
+    /*margin-left: -5%;*/
     border-radius: 5px;
 }
 
@@ -323,13 +323,20 @@ strong em {
     font-family: sans-serif;
     font-style: italic;
 }
+
 em, i {
     font-family: sans-serif;
-    font-style: normal;
+    /*font-style: normal;*/
 }
+
+del {
+    text-decoration: line-through;
+}
+
 a {
     color: #000;
 }
+
 header li {
     font-family: sans-serif;
     font-weight: normal;
@@ -344,7 +351,7 @@ header h1.compressed {
 }
 @media (max-width: 50em) {
     header h1 {
-    font-size: 5vw;
+    font-size: 10vw;
 }
 header h1.compressed {
     font-size: 7vw;
@@ -371,7 +378,8 @@ header h1.compressed {
 }
 
 .article a {
-  border-bottom: 2px solid #fecd9d;
+  border-bottom: 2px solid #000;
+  color: #4078c0;
 }
 
 .article a:hover {
@@ -388,6 +396,21 @@ header h1.compressed {
     text-transform: uppercase;
     font-weight: normal;
     font-size: 13px;
+}
+
+ .article table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ .article table thead:first-child tr:first-child th {
+  border-top: 0;
+}
+ .article table th,
+ .article table td {
+  padding: 8px;
+  line-height: 20px;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
 }
 
 .archive {
