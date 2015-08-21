@@ -1,3 +1,5 @@
-Title: About Me...
+Title: About Me.
 save_as: pages/about.html
 Template: about_me
+
+shit happends
