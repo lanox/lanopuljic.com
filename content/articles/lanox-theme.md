@@ -2,7 +2,6 @@ Title: LanoX: Responsive Pelican theme
 Date: 2015-07-20 08:00
 Tags: pelican, python, theme
 Slug: LanoX-pelican-theme
-Status: published
 
 I have been looking for a good theme that will suite my needs with [Pelican](http://getpelican.com). However most of the themes that i have tried using did not suite my needs or something was missing.
 
