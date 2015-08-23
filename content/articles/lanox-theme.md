@@ -3,25 +3,21 @@ Date: 2015-07-20 08:00
 Tags: pelican, python, theme
 Slug: LanoX-pelican-theme
 
-I have been looking for a good theme that will suite my needs with [Pelican](http://getpelican.com). However most of the themes that i have tried using did not suite my needs or something was missing.
-
-So i started a journey on creating my theme, i truelly can't take all the credit for it as i did look at other themes and and picked things i liked from them and applied them to my theme.
-
-I am sure that my code is not up to the standard as i choped and changed it multiple time and possible there is some code in there that is not even used anywhere. I will try to find some time and clean it all up.
-
-I do give a shit to a certan degree about SEO and integrations with other social networks.
-
-So lets not dwell about this shit here is you can see what this theme can do .
-
-LanoX is a theme that i have build in my spare time fo my blog, as mentioned before dont expect it to be perfect as i can tell you right now its far from it, use it or dont up to you :)....
+LanoX is a theme that I have built in my spare time for my blog. As I mentioned before, don’ t expect it to be perfect as I can tell you right now it’s far from it, use it or don’t up to you :)....
+ 
+I’ve been looking for a theme that will suite my needs with [Pelican](http://getpelican.com). However most of the themes that I have tried using were just not right or there something was missing.
+ 
+So I began a journey of creating my own theme. I must add a disclosure here – I can't take all the credit for it as I did refer to other themes and picked things I liked from them and applied them to my own.
+ 
+My code may not be up to standard, as I chopped and changed it multiple time and it is possible that there are some codes in there that are not even used anywhere. I’ll work on cleaning that up.  
+ 
+But the main thing is that you can see what this theme does. Feedback is welcome!
 
 
 - Mobile
 - Responsive
 - SEO Best Practices ( I Tried )
 - Open Graph ( LinkedIn and Twiteer)
-
-Lanox also offers integrations with multiple services.
 
 #TIP
 
@@ -85,7 +81,7 @@ Swap:        20480       1267      19213
 ##### This is heading 5
 ###### This is heading 6
 
-Emphasis
+#Emphasis
 
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
