@@ -379,14 +379,20 @@ header h1.compressed {
 }
 
 .article_title a {
-    text-decoration: underline;
     font-size: 2em;
 }
 
 .article_date {
     font-family: sans-serif;
     text-transform: uppercase;
-    font-weight: normal;
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.article_user {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding-top: 5px;
     font-size: 13px;
 }
 
