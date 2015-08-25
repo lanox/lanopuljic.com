@@ -407,6 +407,17 @@ header h1.compressed {
     font-size: 13px;
 }
 
+.article_user .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px !important;
+}
+
+.article_user .author{
+  vertical-align: top;
+  line-height: 34px;
+}
+
  .article table {
   border-collapse: collapse;
   border-spacing: 0;

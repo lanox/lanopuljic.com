@@ -19,6 +19,8 @@ DEFAULT_DATE_FORMAT = ('%d %B %Y')
 
 PATH = 'content'
 
+AUTHOR_EMAIL = 'lano.puljic@gmail.com'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -50,6 +52,9 @@ GOOGLE_FONTS = [
     "Source Code Pro",
     "Nunito:300",
 ]
+
+PLUGIN_PATHS = ["content/plugins"]
+PLUGINS = ["gravatar"]
 
 # DISPLAY COVER IMAGE
 COVER_IMG_URL = '/images/logo.jpg'

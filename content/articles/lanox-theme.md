@@ -1,6 +1,7 @@
 Title: LanoX: Responsive Pelican theme
 Date: 2015-07-20 08:00
 Tags: pelican, python, theme
+Email: lano.puljic@gmail.com
 Slug: LanoX-pelican-theme
 
 LanoX is a theme that I have built in my spare time for my blog. As I mentioned before, don’ t expect it to be perfect as I can tell you right now it’s far from it, use it or don’t up to you :)....
