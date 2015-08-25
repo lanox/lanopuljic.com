@@ -387,6 +387,17 @@ header h1.compressed {
     text-transform: uppercase;
     padding-top: 5px;
     font-size: 13px;
+    display: inline;
+}
+
+.article_tags {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding-top: 5px;
+    font-size: 13px;
+    display: inline;
+    position: relative;
+    left: 10px
 }
 
 .article_user {
