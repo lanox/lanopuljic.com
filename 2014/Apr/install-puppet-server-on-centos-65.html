@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="http://lanopuljic.com/images/favicon.png" type="image/x-icon" />
+<link href="//fonts.googleapis.com/css?family=Lato:400,700|Source+Code+Pro|Nunito:300" rel="stylesheet" type="text/css">
+<link href="http://lanopuljic.com/theme/css/lanox.css" rel="stylesheet">
+<link rel="stylesheet" href="http://lanopuljic.com/theme/css/pygments.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="http://lanopuljic.com/theme/js/jquery-1.11.3.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="author" content="Lano Puljic" />
+<meta name="description" content="Instructions on how to setup Puppet on CentOS 6.5 with ease" />
+<meta name="keywords" content="puppet, centOS 6.5">
+<meta property="og:site_name" content="#! Shit Lano Says"/>
+<meta property="og:title" content="Install Puppet Server on CentOS 6.5"/>
+<meta property="og:description" content="Instructions on how to setup Puppet on CentOS 6.5 with ease"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://lanopuljic.com/2014/Apr/install-puppet-server-on-centos-65.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2014-04-19 09:36:56+10:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://lanopuljic.com/author/lano-puljic.html">
+<meta property="article:section" content="Puppet"/>
+<meta property="article:tag" content="puppet"/>
+<meta property="article:tag" content="centOS 6.5"/>
+<meta property="og:image" content="http://lanopuljic.com/images/linkedin_logo.png"><title>#! Shit Lano Says &ndash; Install Puppet Server on CentOS 6.5</title>
+</head>
+
+<header>
+  <div class="logo">
+      <!--<h1>LP</h1>-->
+    </div>
+    <div class="hero" style="background-image: url('/images/logo.jpg')">
+        <h1><a href="http://lanopuljic.com/">#! Shit Lano Says <strong></strong></a>
+          <div class="tagline"> Life is binary, zeros and ones. </div>
+        </h1>
+    </div>
+
+<!-- Menu Starts From Here -->
+  <div class="container menu">
+    <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/work.html">Work</a></li>
+            <li><a href="/archives.html">Archives</a></li>
+      </ul>
+    <!--<hr> This prints orange line under the menu -->
+ </div>
+<!-- Menu ends above this comment -->
+</header>
+<body>
+<div class="container content">
+  <div class="article_date">
+    <i class="fa fa-clock-o"></i> 19 April 2014
+  </div>
+  <div class="article_tags">
+    <i class="fa fa-tags"></i>     <a class="post-category" href="http://lanopuljic.com/tag/puppet.html"> puppet · </a>
+    <a class="post-category" href="http://lanopuljic.com/tag/centos-65.html"> centOS 6.5 · </a>
+  </div>
+  <div class="article_title">
+    <a href="http://lanopuljic.com/2014/Apr/install-puppet-server-on-centos-65.html" rel="bookmark" title="Permalink to Install Puppet Server on CentOS 6.5">Install Puppet Server on CentOS 6.5</a>
+  </div>
+  <div class="article_user">
+        <span class="author" href="http://lanopuljic.com/author/lano-puljic.html"> 
+        <img class="avatar" alt="Lano Puljic" src="http://www.gravatar.com/avatar/10b916d7ccba7c577e9d208ece985674">
+        &nbsp;Lano Puljic</a></span>
+  </div>
+  <div class="article">
+    <h4>Download puppet-server from Puppet Labs</h4>
+<div class="highlight"><pre>yum install -y puppet-server
+</pre></div>
+
+
+<h4>Start Puppet-Server</h4>
+<div class="highlight"><pre>/etc/init.d/puppetmaster start
+</pre></div>
+
+
+<h4>Set Puppet Master to run on startup ( if you usng passenged no need to do this)</h4>
+<div class="highlight"><pre><span class="na">puppet</span> <span class="na">resource</span> <span class="k">service</span> <span class="na">puppetmaster</span> <span class="na">ensure</span><span class="o">=</span><span class="k">running</span> <span class="na">enable</span><span class="o">=</span><span class="k">true</span>
+</pre></div>
+
+
+<h4>Download apache and necessary dependencies</h4>
+<div class="highlight"><pre>yum install -y httpd httpd-devel mod_ssl ruby-devel rubygems gcc-c++ curl-devel zlib-devel make automake openssl-devel
+</pre></div>
+
+
+<h4>Install Rack/Passenger</h4>
+<div class="highlight"><pre>gem install rack passenger
+passenger-install-apache2-module
+</pre></div>
+
+
+<p>Add passenger to be loaded from http.conf gloabaly</p>
+<div class="highlight"><pre>vi etc/http/conf/http.conf
+</pre></div>
+
+
+<p>Add folldowing in http.conf</p>
+<div class="highlight"><pre><span class="nb">Add</span> this in Load Module section
+<span class="nb">LoadModule</span> passenger_module <span class="sx">/usr/lib/ruby/gems/1.8/gems/passenger-4.0.42/buildout/apache2/mod_passenger.so</span>
+<span class="nb">PassengerRoot</span> <span class="sx">/usr/lib/ruby/gems/1.8/gems/passenger-4.0.42</span>```
+<span class="nb">PassengerDefaultRuby</span> <span class="sx">/usr/bin/ruby</span>
+</pre></div>
+
+
+<h4>Create the directory structure for Puppet Master Rack Application</h4>
+<div class="highlight"><pre>mkdir -p /usr/share/puppet/rack/puppetmasterd
+mkdir /usr/share/puppet/rack/puppetmasterd/public /usr/share/puppet/rack/puppetmasterd/tmp
+cp /usr/share/puppet/ext/rack/config.ru  /usr/share/puppet/rack/puppetmasterd/
+chown puppet:puppet /usr/share/puppet/rack/puppetmasterd/config.ru
+</pre></div>
+
+
+<p>Create a virtual host file for puppet:</p>
+<div class="highlight"><pre>vi /etc/httpd/conf.d/puppetmaster.conf
+</pre></div>
+
+
+<p>Add Following in puppetmaster.conf</p>
+<div class="highlight"><pre><span class="c">#### And the passenger performance tuning settings:</span>
+<span class="nb">PassengerHighPerformance</span> <span class="k">On</span>
+<span class="c">#### Set this to about 1.5 times the number of CPU cores in your master:</span>
+<span class="nb">PassengerMaxPoolSize</span> <span class="m">12</span>
+<span class="c">#### Recycle master processes after they service 1000 requests</span>
+<span class="nb">PassengerMaxRequests</span> <span class="m">1000</span>
+<span class="c">#### Stop processes if they sit idle for 10 minutes</span>
+<span class="nb">PassengerPoolIdleTime</span> <span class="m">600</span>
+
+<span class="nb">Listen</span> <span class="m">8140</span>
+<span class="nt">&lt;VirtualHost</span> <span class="s">*:8140</span><span class="nt">&gt;</span>
+    <span class="nb">SSLEngine</span> <span class="k">On</span>
+
+    <span class="c"># Only allow high security cryptography. Alter if needed for compatibility.</span>
+    <span class="nb">SSLProtocol</span>             <span class="k">All</span> -SSLv2
+    <span class="nb">SSLCipherSuite</span>          HIGH:!ADH:RC4+RSA:-MEDIUM:-LOW:-EXP
+    <span class="nb">SSLCertificateFile</span>      <span class="sx">/var/lib/puppet/ssl/certs/puppetmaster01.xonal.dev.com.pem</span>
+    <span class="nb">SSLCertificateKeyFile</span>   <span class="sx">/var/lib/puppet/ssl/private_keys/puppetmaster01.dev.xonal.com.pem</span>
+    <span class="nb">SSLCertificateChainFile</span> <span class="sx">/var/lib/puppet/ssl/ca/ca_crt.pem</span>
+    <span class="nb">SSLCACertificateFile</span>    <span class="sx">/var/lib/puppet/ssl/ca/ca_crt.pem</span>
+    <span class="nb">SSLCARevocationFile</span>     <span class="sx">/var/lib/puppet/ssl/ca/ca_crl.pem</span>
+    <span class="nb">SSLVerifyClient</span>         optional
+    <span class="nb">SSLVerifyDepth</span>          <span class="m">1</span>
+    <span class="nb">SSLOptions</span>              +StdEnvVars +ExportCertData
+
+    <span class="c"># These request headers are used to pass the client certificate</span>
+    <span class="c"># authentication information on to the puppet master process</span>
+    <span class="nb">RequestHeader</span> set X-SSL-Subject %{SSL_CLIENT_S_DN}e
+    <span class="nb">RequestHeader</span> set X-Client-DN %{SSL_CLIENT_S_DN}e
+    <span class="nb">RequestHeader</span> set X-Client-Verify %{SSL_CLIENT_VERIFY}e
+
+    <span class="nb">DocumentRoot</span> <span class="sx">/usr/share/puppet/rack/puppetmasterd/public</span>
+
+    <span class="nt">&lt;Directory</span> <span class="s">/usr/share/puppet/rack/puppetmasterd/</span><span class="nt">&gt;</span>
+      <span class="nb">Options</span> <span class="k">None</span>
+      <span class="nb">AllowOverride</span> <span class="k">None</span>
+        <span class="nb">Order</span> allow,deny
+        <span class="nb">Allow</span> from <span class="k">all</span>
+    <span class="nt">&lt;/Directory&gt;</span>
+
+    <span class="nb">ErrorLog</span> <span class="sx">/var/log/httpd/puppet-server.example.com_ssl_error.log</span>
+    <span class="nb">CustomLog</span> <span class="sx">/var/log/httpd/puppet-server.example.com_ssl_access.log</span> combined
+<span class="nt">&lt;/VirtualHost&gt;</span>
+</pre></div>
+
+
+<p>Start Apache:</p>
+<div class="highlight"><pre>/etc/init.d/puppetmaster stop
+/etc/init.d/httpd start
+</pre></div>
+
+
+<p>If you get follwoing meesage</p>
+<blockquote>
+<p>Starting httpd: httpd: Could not reliably determine the servers fully qualified domain name, using puppetmaster01.xonal.dev.com for ServerName</p>
+</blockquote>
+<p>Edit host file and add the server.</p>
+<div class="highlight"><pre>vi /etc/hosts
+xx.xx.xx.xx puppetmaster01.xonal.dev.com
+</pre></div>
+
+
+<p>Disable WEBrick: ( No need to do this if you didnt demonize the process in above step)</p>
+<div class="highlight"><pre>chkconfig puppetmaster off
+</pre></div>
+
+
+<p>Enable Apache on boot</p>
+<div class="highlight"><pre>chkconfig httpd on 34
+</pre></div>
+
+
+<p>Make sure the port is open and it’s listening:</p>
+<div class="highlight"><pre>netstat -ln <span class="p">|</span> grep 8140
+tcp    <span class="m">0</span>  <span class="m">0</span> 0.0.0.0:8140         0.0.0.0:*              LISTEN
+</pre></div>
+  </div>
+
+  <br>
+  <a href="#" class="go-top">Go Top</a>
+  <div class="addthis_native_toolbox"></div>
+  <br>
+<div class="container content">
+<div id="disqus_thread">
+  <div id='disqus_loader' onclick="load_disqus()"><i class="fa fa-comments"></i>&nbsp;Load comments</div>
+
+<script type="text/javascript">
+  function load_disqus()
+  {
+    var disqus_shortname = "lanopuljic"; // required: replace example with your forum shortname
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    var ldr = document.getElementById('disqus_loader');
+    ldr.parentNode.removeChild(ldr);
+  }
+</script>
+</div>
+</div>
+  <br>
+</div>
+<footer>
+    <div class="container">
+      <div class="bio">
+      <br>
+        <a href="https://twitter.com/lanox_" class="twitter-follow">@lano</a> builds things by banging on a keyboard.
+          <ul class="social">
+            <li><a class="sc-github" href="http://github.com/lanox" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a class="sc-twitter" href="http://github.com/lanox" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="sc-linkedin" href="https://br.linkedin.com/in/lanopuljic/en" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+  </footer>    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+ <script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-51180854-1', 'auto');
+  ga('send', 'pageview');
+</script>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55c72deca9344b40" async="async"></script>
+</body>
+</html>
