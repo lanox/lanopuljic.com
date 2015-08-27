@@ -34,15 +34,16 @@
   <div class="article">
     {{ article.content }}
   </div>
-</div>
+
   <br>
   <a href="#" class="go-top">Go Top</a>
   {% if ADD_THIS_ID %}
   <div class="addthis_native_toolbox"></div>
   {% endif %}
-<br>
-{% if DISQUS_SITENAME %}
-{% include 'include/disqus.html' %}
-{% endif %}
-<br>
+  <br>
+    {% if DISQUS_SITENAME %}
+    {% include 'include/disqus.html' %}
+    {% endif %}
+  <br>
+</div>
 {% endblock %}
