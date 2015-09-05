@@ -231,7 +231,7 @@ header .logo:hover {
 
 }
 .recent-posts li {
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
     list-style-type: none;
 }
 
@@ -405,6 +405,7 @@ header h1.compressed {
     text-transform: uppercase;
     padding-top: 5px;
     font-size: 13px;
+    width: auto;
 }
 
 .article_user .avatar {
@@ -414,7 +415,16 @@ header h1.compressed {
 }
 
 .article_user .author{
+  width:auto;
+  display: inline-block;
   vertical-align: top;
+  line-height: 35px;
+}
+
+.article_stats {
+  vertical-align: top;
+  width:auto;
+  display: inline-block;
   line-height: 35px;
 }
 
