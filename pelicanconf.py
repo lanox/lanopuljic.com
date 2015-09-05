@@ -54,7 +54,9 @@ GOOGLE_FONTS = [
 ]
 
 PLUGIN_PATHS = ["content/plugins"]
-PLUGINS = ["gravatar"]
+PLUGINS = ['gravatar',
+           'post_stats',
+           ]
 
 # DISPLAY COVER IMAGE
 COVER_IMG_URL = '/images/logo.jpg'
