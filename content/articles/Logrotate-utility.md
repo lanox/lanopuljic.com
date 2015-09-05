@@ -1,9 +1,11 @@
 Title: Logrotate Utility on Linux
-Date: 2015-05-30 14:37:56 +1000
+Date: 30-05-2015
 Category: Linux
 Tags: logs
-Author: Lano Puljic
-Summary: How to rotate logs using logrotate
+Author: Lano
+Image:
+Email: lanox.post@gmail.com
+Summary: How to rotate logs using logrotate.
 
 Logrotate  is  designed to ease administration of systems that generate large numbers of log files.  It allows automatic rotation, compression, removal, and mailing of log files.   Eachlog file may be handled daily, weekly, monthly, or when it grows too large.
 

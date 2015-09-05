@@ -11,10 +11,8 @@
 
 {% block content %}
 <div class="container content">
-  <div class="article_date">
-    <i class="fa fa-calendar"></i> {{ article.locale_date }}
-  </div>
-  <div class="article_tags">
+  <div class="article_date_tags">
+    <i class="fa fa-calendar"></i> {{ article.locale_date }}&nbsp;&nbsp;
     <i class="fa fa-tags"></i> {% for tag in article.tags %}
     <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}"> {{ tag }} · </a>
     {% endfor %}

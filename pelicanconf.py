@@ -19,8 +19,6 @@ DEFAULT_DATE_FORMAT = ('%d %B %Y')
 
 PATH = 'content'
 
-AUTHOR_EMAIL = 'lano.puljic@gmail.com'
-
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None

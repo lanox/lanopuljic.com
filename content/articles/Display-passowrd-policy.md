@@ -1,11 +1,11 @@
 Title: Display passowrd policy message.
-Date:2014-05-19 09:36:56 +1000
-Category:Articles
-Tags:linux
-Author:Lano Puljic
+Date: 2014-05-19 09:36:56 +1000
+Category: Articles
+Tags: linux
+Author: Lano
 Image:
-Email:lano.puljic@gmail.com
-Summary:Display password policy when asked to change password
+Email: lanox.post@gmail.com
+Summary: Display password policy when asked to change password
 
 Echo service module for PAM can be used to displays it's policy to users for the new password.
 

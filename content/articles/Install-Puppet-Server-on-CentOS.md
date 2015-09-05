@@ -2,9 +2,9 @@ Title: Install Puppet Server on CentOS 6.5
 Date: 2014-04-19 09:36:56 +1000
 Category: Puppet
 Tags: puppet,centOS 6.5
-Author: Lano Puljic
-image:logo1.jpg
-email: lano.puljic@gmail.com
+Author: Lano
+Image:
+Email: lanox.post@gmail.com
 Summary: Instructions on how to setup Puppet on CentOS 6.5 with ease
 
 

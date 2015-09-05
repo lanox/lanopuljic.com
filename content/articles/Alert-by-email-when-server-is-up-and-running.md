@@ -2,8 +2,10 @@ Title: Alert by email when server is up and running
 Date: 19-05-2014 09:36:56 +1000
 Category: Linux
 Tags: linux,bash
-Author: Lano Puljic
-Email: lano.puljic@gmail.com
+Author: Lano
+Image:
+Email: lanox.post@gmail.com
+Summary: Alert by email when server is up and running.
 
 If you are lazy like me to wait for server to come back after a reboot, but would like to be notify when it does here is the simple one liner commend that will save you.
 
