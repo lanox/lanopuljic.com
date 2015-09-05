@@ -25,9 +25,8 @@
   <div class="article_user">
     {% if article.authors %}
       {% for author in article.authors %}
-        <span class="author" href="{{ SITEURL }}/{{ author.url }}"> 
         <img class="avatar" alt="{{ article.author }}" src="{{ article.author_gravatar }}">
-        &nbsp;{{ author }}</a></span>
+        <span class="author" href="{{ SITEURL }}/{{ author.url }}"> &nbsp;{{ author }}</span>
       {% endfor %}
     {% endif %}
   </div>
